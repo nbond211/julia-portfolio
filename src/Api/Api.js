@@ -1,5 +1,5 @@
 import Prismic from 'prismic-javascript';
-import PrivateKeys from "./PrivateKeys";
+import PrivateKeys from "../PrivateKeys";
 
 export default async function() {
   const {apiEndpoint, accessToken} = PrivateKeys;
