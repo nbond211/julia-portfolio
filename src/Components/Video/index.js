@@ -7,5 +7,10 @@ export default class extends React.Component {
     const {id, duration, metadata, title} = this.props;
     const previewImageUrl = this.props['preview_image'].url;
 
+    return (
+      <div className="col-md-4">
+      </div>
+    );
+
   }
 }
