@@ -1,0 +1,27 @@
+#Nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.nav-title {
+    font-size: var(--lg-size);
+    font-weight: var(--bold-weight);
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-link {
+    color: var(--dark-1);
+    font-size: var(--md-size);
+    font-weight: var(--bold-weight);
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+.nav-link:last-of-type {
+    margin-right: 0;
+}
