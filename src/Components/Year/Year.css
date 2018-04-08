@@ -1,0 +1,27 @@
+.year-title {
+    font-size: var(--md-size);
+    font-weight: var(--bold-weight);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.year-title:before, .year-title:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 50%;
+    height: 1px;
+    content: '\a0';
+    background-color: var(--light-1);
+}
+.year-title:before {
+    margin-left: -51.5%;
+    text-align: right;
+}
+
+.year-title:after {
+    margin-left: 1.5%;
+    text-align: left;
+}

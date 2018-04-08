@@ -7,7 +7,9 @@ export default class extends React.Component {
     const {year, content} = this.props;
 
     return (
-      <h2>{year}</h2>
+      <div className="year">
+        <h2 className="year-title">{year}</h2>
+      </div>
     );
 
 
