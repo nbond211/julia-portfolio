@@ -1,5 +1,27 @@
+:root {
+    /* COLORS */
+    --background-color: #C3C1BF;
+    --dark-1: #363636;
+
+    /* TYPOGRAPHY */
+    --font-family: 'News Cycle', sans-serif;
+    --body-weight: 400;
+    --bold-weight: 700;
+
+    --lg-size: 1.625rem;
+    --md-size: 1.125rem;
+    --sm-size: 0.875rem;
+
+}
+
+html {
+    font-size: 16px; /* default font-size */
+}
+
 body {
+  background-color: var(--background-color);
+  color: var(--dark-1);
+  font-family: var(--font-family);
   margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+  padding: 60px;
 }
