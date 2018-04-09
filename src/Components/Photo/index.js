@@ -11,10 +11,9 @@ export default class extends React.Component {
 
     const isTall = height / width >= 1.2;
 
-    console.log(title, isTall);
 
-    return ([
-        <div className={`col-md-${isTall ? 3 : 4}`}>
+    return (
+        <div className={`photo-column col-md-${isTall ? 3 : 4}`}>
           <div className="photo-container">
             <div className="photo-preview-image">
               <img src={previewImageUrl}/>
@@ -23,6 +22,6 @@ export default class extends React.Component {
             <p className="photo-info">{medium} <span className="photo-dimensions">{dimensions}</span></p>
           </div>
         </div>
-    ]);
+    );
   }
 }

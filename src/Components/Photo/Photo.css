@@ -1,3 +1,7 @@
+.photo-column:last-child {
+    margin-right: auto;
+}
+
 .photo-container {
     margin-top: 50px;
     width: 100%;
