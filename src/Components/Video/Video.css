@@ -1,12 +1,9 @@
-.video-column {
-    cursor: pointer;
-}
-
 .video-column:last-child {
     margin-right: auto;
 }
 
 .video-container {
+    cursor: pointer;
     margin-top: 50px;
     width: 100%;
 }

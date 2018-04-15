@@ -14,8 +14,8 @@ export default class extends React.Component {
     const previewImageUrl = preview_image.url;
 
     return (
-      <div onClick={this.onClick} className="col-md-4 video-column">
-        <div className="video-container">
+      <div className="col-md-4 video-column">
+        <div onClick={this.onClick} className="video-container">
           <div className="video-preview-image">
             <img className="play-icon" src="/images/play.svg"/>
             <img className="preview-img" src={previewImageUrl}/>
