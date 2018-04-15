@@ -17,7 +17,8 @@ export default class extends React.Component {
       <div onClick={this.onClick} className="col-md-4 video-column">
         <div className="video-container">
           <div className="video-preview-image">
-            <img src={previewImageUrl}/>
+            <img className="play-icon" src="/images/play.svg"/>
+            <img className="preview-img" src={previewImageUrl}/>
           </div>
           <p className="video-title">{title}</p>
           <p className="video-info"><span className="video-duration">{duration}</span> {metadata}</p>

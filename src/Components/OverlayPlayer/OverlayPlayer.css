@@ -10,7 +10,7 @@
     visibility: hidden;
     -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
     transition: opacity 0.5s, visibility 0s 0.5s;
-    z-index: 3;
+    z-index: 5;
 
     display: flex;
     justify-content: center;
