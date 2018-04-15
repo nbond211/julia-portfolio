@@ -3,12 +3,18 @@ import './Video.css';
 
 export default class extends React.Component {
 
+  onClick = () => {
+    const {id, selectWork, toggleOverlay} = this.props;
+    selectWork(id);
+    toggleOverlay();
+  };
+
   render() {
-    const {id, duration, metadata, preview_image, title} = this.props;
+    const {duration, metadata, preview_image, title} = this.props;
     const previewImageUrl = preview_image.url;
 
     return (
-      <div className="col-md-4 video-column">
+      <div onClick={this.onClick} className="col-md-4 video-column">
         <div className="video-container">
           <div className="video-preview-image">
             <img src={previewImageUrl}/>
