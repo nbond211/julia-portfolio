@@ -1,3 +1,39 @@
+@font-face {
+    font-family: 'News-Gothic';
+    src: url('/fonts/News-Gothic-Bold.eot');
+    src: url('/fonts/News-Gothic-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/News-Gothic-Bold.woff2') format('woff2'),
+    url('/fonts/News-Gothic-Bold.woff') format('woff'),
+    url('/fonts/News-Gothic-Bold.ttf') format('truetype'),
+    url('/fonts/News-Gothic-Bold.svg#News-Gothic-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'News-Gothic';
+    src: url('/fonts/News-Gothic-Normal.eot');
+    src: url('/fonts/News-Gothic-Normal.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/News-Gothic-Normal.woff2') format('woff2'),
+    url('/fonts/News-Gothic-Normal.woff') format('woff'),
+    url('/fonts/News-Gothic-Normal.ttf') format('truetype'),
+    url('/fonts/News-Gothic-Normal.svg#News-Gothic-Normal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'News-Gothic';
+    src: url('/fonts/News-Gothic-Italic.eot');
+    src: url('/fonts/News-Gothic-Italic.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/News-Gothic-Italic.woff2') format('woff2'),
+    url('/fonts/News-Gothic-Italic.woff') format('woff'),
+    url('/fonts/News-Gothic-Italic.ttf') format('truetype'),
+    url('/fonts/News-Gothic-Italic.svg#News-Gothic-Italic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+}
+
 :root {
     /* COLORS */
     --background-color: #C3C1BF;
@@ -6,9 +42,9 @@
     --light-2: #DADADA;
 
     /* TYPOGRAPHY */
-    --font-family: 'News Cycle', sans-serif;
-    --body-weight: 400;
-    --bold-weight: 700;
+    --font-family: 'News-Gothic', sans-serif;
+    --body-weight: normal;
+    --bold-weight: bold;
 
     --lg-size: 1.625rem;
     --md-size: 1.125rem;
@@ -17,7 +53,7 @@
 }
 
 html {
-    font-size: 16px; /* default font-size */
+    font-size: 18px; /* default font-size */
 }
 
 body {
