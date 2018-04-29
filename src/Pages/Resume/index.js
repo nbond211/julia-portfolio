@@ -1,4 +1,5 @@
 import React from 'react';
+import {RichText} from 'prismic-reactjs';
 import fetchResume from '../../Api/FetchResume';
 import './Resume.css';
 
@@ -7,23 +8,28 @@ export default class extends React.Component {
     super();
 
     this.state = {
-      years: [],
-      isOverlayOpen: false,
-      selectedWorkId: undefined
+      resume: false
     };
   }
 
   async componentDidMount() {
-    await fetchResume();
-    // this.setState({years: years.sort((a, b) => b.year - a.year)});
+    const resume = await fetchResume();
+    this.setState({resume});
   }
 
   render() {
+    if (this.state.resume) {
+      const {education, exhibitions, professional_activity} = this.state.resume;
 
-    if (this.state.years.length) {
-      return <p>test</p>
+      return (
+        <div className="row">
+          <div className="col-md-4 resume-section">{RichText.render(education)}</div>
+          <div className="col-md-4 resume-section">{RichText.render(exhibitions)}</div>
+          <div className="col-md-4 resume-section">{RichText.render(professional_activity)}</div>
+        </div>
+      )
     } else {
-      return <p>loading... <em>hello hello testing 1 2 3 testing standard tuesday</em></p>;
+      return <p>loading...</p>;
     }
   }
 }

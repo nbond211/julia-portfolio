@@ -1,3 +1,23 @@
-em {
+.resume-section em {
+    font-style: italic;
+}
 
+.resume-section strong {
+    font-weight: bold;
+}
+
+.resume-section h2 {
+    font-size: var(--lg-size);
+    margin-bottom: 1rem;
+}
+
+.resume-section h3 {
+    font-size: var(--md-size);
+    font-weight: var(--bold-weight);
+    margin-bottom: 0.5rem;
+}
+
+.resume-section p {
+    line-height: 1.4;
+    margin-bottom: 1rem;
 }
