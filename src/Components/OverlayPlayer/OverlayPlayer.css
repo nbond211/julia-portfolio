@@ -29,23 +29,23 @@
     flex-direction: column;
 }
 
-.video-player-top-section {
+.player-top-section {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
 }
 
-.video-player-title {
+.player-title {
     font-size: var(--lg-size);
     font-weight: var(--bold-weight);
 }
 
-.video-player-metadata {
+.player-body-text {
     font-size: var(--md-size);
     font-weight: var(--body-weight);
 }
 
-.video-player-duration {
+.player-emphasis-text {
     font-weight: var(--bold-weight);
 }
 

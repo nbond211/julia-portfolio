@@ -1,0 +1,32 @@
+.photo-player-content {
+    width: 60%;
+}
+
+.player-photo-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-photo {
+    max-height: 75vh;
+    max-width: 50vw;
+}
+
+.arrow-icon {
+    width: 38px;
+    cursor: pointer;
+}
+
+.arrow-icon path {
+    transition: fill .4s ease;
+}
+
+.arrow-icon:hover path {
+    fill: #fff;
+}
+
+.player-photo-number {
+    font-size: var(--sm-size);
+    font-weight: var(--bold-weight);
+    text-align: center;
+}
