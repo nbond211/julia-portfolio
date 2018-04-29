@@ -22,18 +22,6 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'News-Gothic';
-    src: url('/fonts/News-Gothic-Italic.eot');
-    src: url('/fonts/News-Gothic-Italic.eot?#iefix') format('embedded-opentype'),
-    url('/fonts/News-Gothic-Italic.woff2') format('woff2'),
-    url('/fonts/News-Gothic-Italic.woff') format('woff'),
-    url('/fonts/News-Gothic-Italic.ttf') format('truetype'),
-    url('/fonts/News-Gothic-Italic.svg#News-Gothic-Italic') format('svg');
-    font-weight: 100;
-    font-style: italic;
-}
-
 :root {
     /* COLORS */
     --background-color: #C3C1BF;
@@ -43,6 +31,7 @@
 
     /* TYPOGRAPHY */
     --font-family: 'News-Gothic', sans-serif;
+    --italic-style: italic;
     --body-weight: normal;
     --bold-weight: bold;
 
