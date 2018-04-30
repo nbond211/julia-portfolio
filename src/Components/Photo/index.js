@@ -20,7 +20,7 @@ export default class extends React.Component {
 
 
     return (
-        <div onClick={this.onClick} className={`photo-column col-md-${isTall ? 3 : 4}`}>
+        <div onClick={this.onClick} className={`photo-column col-sm-${isTall ? 5 : 6} col-md-${isTall ? 3 : 4}`}>
           <div className="photo-container">
             <LazyLoad once>
               <div className="photo-preview-image">

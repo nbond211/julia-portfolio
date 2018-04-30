@@ -15,7 +15,7 @@ export default class extends React.Component {
     const previewImageUrl = preview_image.url;
 
     return (
-      <div className="col-md-4 video-column">
+      <div className="col-md-4 col-sm-6 video-column">
         <div onClick={this.onClick} className="video-container">
           <LazyLoad once>
             <div className="video-preview-image">
