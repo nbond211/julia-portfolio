@@ -30,3 +30,31 @@
     font-weight: var(--bold-weight);
     text-align: center;
 }
+
+@media only screen and (min-device-width : 0px) and (max-width: 1200px) {
+    .photo-player-content {
+        width: 100%;
+        padding: 0 25px;
+    }
+
+    .player-photo {
+        max-height: 80vh;
+        max-width: 80vw;
+    }
+}
+
+@media only screen and (min-device-width : 0px) and (max-width: 750px) {
+    .arrow-icon {
+        width: 15px;
+    }
+}
+
+@media only screen and (min-device-width : 0px) and (max-width: 450px) {
+    .arrow-icon {
+        display: none;
+    }
+
+    .player-photo-section {
+        justify-content: center !important;
+    }
+}
