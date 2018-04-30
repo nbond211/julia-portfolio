@@ -7,11 +7,10 @@ export default class extends React.Component {
   render() {
     return (
       <div id="Nav">
-        <h1 className="nav-title">Julia Hechtman</h1>
+        <h1 className="nav-title"><Link className="nav-title-link" to="/">Julia Hechtman</Link></h1>
         <div className="nav-links">
           <Link className="nav-link" to="/">Work</Link>
-          <Link className="nav-link" to="/">Contact</Link>
-          <Link className="nav-link" to="/">Resume</Link>
+          <Link className="nav-link" to="/resume">Resume</Link>
         </div>
       </div>
     );
