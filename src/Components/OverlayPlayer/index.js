@@ -131,7 +131,7 @@ export default class extends React.Component {
                       fill='#646464' fillRule='evenodd' />
               </svg>
             </div>
-            <ReactPlayer url={embed_link.embed_url} playing={isOpen} />
+            {isOpen && <ReactPlayer width={window.innerWidth < 640 ? window.innerWidth - 50 : 640} url={embed_link.embed_url} playing={isOpen && typeof window.orientation === "undefined"} />}
           </div>
         );
       }

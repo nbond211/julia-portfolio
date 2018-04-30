@@ -51,6 +51,7 @@
 
 .close-icon {
     cursor: pointer;
+    overflow: visible;
 }
 
 .close-icon path {
@@ -59,5 +60,12 @@
 
 .close-icon:hover path {
     fill: #fff;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width : 400px) {
+    .player-content {
+        padding: 0 25px;
+    }
 }
 
