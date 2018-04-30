@@ -1,4 +1,5 @@
 import React from 'react';
+import LazyLoad from 'react-lazyload';
 import './Photo.css';
 
 export default class extends React.Component {
@@ -21,9 +22,11 @@ export default class extends React.Component {
     return (
         <div onClick={this.onClick} className={`photo-column col-md-${isTall ? 3 : 4}`}>
           <div className="photo-container">
-            <div className="photo-preview-image">
-              <img src={previewImageUrl}/>
-            </div>
+            <LazyLoad once>
+              <div className="photo-preview-image">
+                <img src={previewImageUrl}/>
+              </div>
+            </LazyLoad>
             <p className="photo-title">{title}</p>
             <p className="photo-info">{medium} <span className="photo-dimensions">{dimensions}</span></p>
           </div>
