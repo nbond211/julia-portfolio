@@ -21,3 +21,9 @@
     line-height: 1.4;
     margin-bottom: 1rem;
 }
+
+@media only screen and (min-device-width : 0px) and (max-width: 1023px) {
+    .resume-section {
+        margin-bottom: 3rem;
+    }
+}
