@@ -87,3 +87,15 @@
     -moz-transform: translateY(0px);
     transform: translateY(0px);
 }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-device-width : 400px) {
+    #Nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        margin-top: 1rem;
+    }
+}
