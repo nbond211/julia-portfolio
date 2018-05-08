@@ -41,6 +41,11 @@
 }
 
 .player-body-text {
+    font-size: var(--sm-size);
+    font-weight: var(--body-weight);
+}
+
+.player-subtitle {
     font-size: var(--md-size);
     font-weight: var(--body-weight);
 }
