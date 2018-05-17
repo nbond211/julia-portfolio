@@ -6,8 +6,8 @@ import './Year.css';
 export default class extends React.Component {
 
   render() {
-    const {year, content, selectWork, toggleOverlay} = this.props;
-
+    const {year, endYear, content, selectWork, toggleOverlay} = this.props;
+    
     const yearContent = content.map(work => {
       const {type} = work;
       if (type === "photo") {
@@ -25,7 +25,7 @@ export default class extends React.Component {
 
     return (
       <div className="year">
-        <h2 className="year-title">{year}</h2>
+        <h2 className="year-title">{year && endYear ? `${year} - ${endYear}` : year}</h2>
         <div className="year-content-grid row">
           {yearContent}
         </div>

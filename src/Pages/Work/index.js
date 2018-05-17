@@ -34,7 +34,7 @@ export default class extends React.Component {
 
     if (this.state.years.length) {
       const years = this.state.years.map(year => (
-        <Year toggleOverlay={this.toggleOverlay} selectWork={this.selectWork} key={year.year} year={year.year} content={year.content}/>
+        <Year toggleOverlay={this.toggleOverlay} selectWork={this.selectWork} key={year.year} year={year.year} endYear={year["end_year"]} content={year.content}/>
       ));
 
       return [<OverlayPlayer isOpen={this.state.isOverlayOpen} selectedWorkId={this.state.selectedWorkId} toggleOverlay={this.toggleOverlay} key="overlay"/>, years];
