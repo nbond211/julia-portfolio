@@ -17,7 +17,15 @@ export default class extends React.Component {
 
   async componentDidMount() {
     const years = await fetchYears();
-    this.setState({years: years.sort((a, b) => b.year - a.year)});
+    this.setState({
+      years: years.sort((a, b) => {
+        const result = (b["end_year"] || b.year) - (a["end_year"] || a.year);
+        if (result === 0) {
+          return !b["end_year"] ? 1 : -1;
+        }
+        return result;
+      })
+    });
   }
 
   selectWork = id => {

@@ -7,7 +7,7 @@ export default class extends React.Component {
 
   render() {
     const {year, endYear, content, selectWork, toggleOverlay} = this.props;
-    
+
     const yearContent = content.map(work => {
       const {type} = work;
       if (type === "photo") {
