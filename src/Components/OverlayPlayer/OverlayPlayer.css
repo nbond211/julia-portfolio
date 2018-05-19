@@ -48,6 +48,7 @@
 .player-subtitle {
     font-size: var(--md-size);
     font-weight: var(--body-weight);
+    font-style: italic;
 }
 
 .player-emphasis-text {
