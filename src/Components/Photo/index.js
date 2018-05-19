@@ -28,7 +28,11 @@ export default class extends React.Component {
               </div>
             </LazyLoad>
             <p className="photo-title">{title}</p>
-            <p className="photo-info">{medium} <span className="photo-dimensions">{dimensions}</span></p>
+            <div className="photo-info-container">
+              <p className="photo-info">{medium}</p>
+              <p className="photo-info-separator">&nbsp;</p>
+              <p className="photo-info">{dimensions}</p>
+            </div>
           </div>
         </div>
     );

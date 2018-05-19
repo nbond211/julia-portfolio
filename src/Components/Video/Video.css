@@ -45,7 +45,7 @@
 }
 
 .video-duration {
-    font-weight: var(--bold-weight);
+    font-weight: var(--body-weight);
 }
 
 .play-icon {
@@ -61,4 +61,16 @@
 
 .video-container:hover .play-icon {
     opacity: 1;
+}
+
+.video-info-container {
+    display: flex;
+    align-items: center;
+}
+
+.video-info-separator {
+    border-left: var(--dark-1) solid 1px;
+    height: 14px;
+    width: 0;
+    margin: 0 7px 2px 6px;
 }

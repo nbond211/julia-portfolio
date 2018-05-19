@@ -51,8 +51,16 @@
     font-style: italic;
 }
 
-.player-emphasis-text {
-    font-weight: var(--bold-weight);
+.overlay-player-info {
+    display: flex;
+    align-items: center;
+}
+
+.player-text-separator {
+    border-left: var(--light-2) solid 1px;
+    height: 14px;
+    width: 0;
+    margin: 0 7px 0 6px;
 }
 
 .close-icon {

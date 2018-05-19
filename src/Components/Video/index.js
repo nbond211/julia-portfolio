@@ -24,7 +24,11 @@ export default class extends React.Component {
             </div>
           </LazyLoad>
           <p className="video-title">{title}</p>
-          <p className="video-info"><span className="video-duration">{duration}</span> {metadata}</p>
+          <div className="video-info-container">
+            <p className="video-info">{duration}</p>
+            <d className="video-info-separator">&nbsp;</d>
+            <p className="video-info">{metadata}</p>
+          </div>
         </div>
       </div>
     );

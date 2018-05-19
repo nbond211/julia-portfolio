@@ -144,7 +144,11 @@ export default class extends React.Component {
               <div className="player-text">
                 <h4 className="player-title">{title[0].text}</h4>
                 {images[currentImage].title1.length !== 0 && <h6 className="player-subtitle">{images[currentImage].title1[0].text}</h6>}
-                <p className="player-body-text">{medium} <span className="player-emphasis-text">{dimensions}</span></p>
+                <div className="overlay-player-info">
+                  <p className="player-body-text">{medium}</p>
+                  <div className="player-text-separator">&nbsp;</div>
+                  <p className="player-body-text">{dimensions}</p>
+                </div>
               </div>
               <svg className="close-icon" onClick={this.props.toggleOverlay} width='28' height='28' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M27.968 3.064L16.832 14.2l11.136 11.136-2.832 2.832L14 17.032 2.864 28.168.032 25.336 11.168 14.2.032 3.064 2.864.232 14 11.368 25.136.232z'
