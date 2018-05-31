@@ -262,6 +262,7 @@ module.exports = {
     // It is absolutely essential that NODE_ENV was set to production here.
     // Otherwise React will be compiled in the very slow development mode.
     new webpack.DefinePlugin({
+      NODE_ENV: "production",
       API_ENDPOINT: JSON.stringify(process.env.API_ENDPOINT),
       ACCESS_TOKEN: JSON.stringify(process.env.ACCESS_TOKEN)
     }),
