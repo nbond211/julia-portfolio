@@ -155,7 +155,7 @@ export default class extends React.Component {
                       fill='#646464' fillRule='evenodd' />
               </svg>
             </div>
-            <Swipeable onSwipedLeft={this.slideShowBack} onSwipedRight={this.slideShowForward}>
+            <Swipeable onSwipedLeft={this.slideShowForward} onSwipedRight={this.slideShowBack}>
               <div className="player-photo-section" style={{justifyContent: singleImage ? "center" : "space-between"}}>
                 {
                   !singleImage &&
