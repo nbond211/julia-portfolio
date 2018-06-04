@@ -26,7 +26,7 @@ export default class extends React.Component {
           <p className="video-title">{title}</p>
           <div className="video-info-container">
             <p className="video-info">{duration}</p>
-            <d className="video-info-separator">&nbsp;</d>
+            <div className="video-info-separator">&nbsp;</div>
             <p className="video-info">{metadata}</p>
           </div>
         </div>
