@@ -24,7 +24,7 @@ export default class extends React.Component {
           <div className="photo-container">
             <LazyLoad once>
               <div className="photo-preview-image">
-                <img src={previewImageUrl}/>
+                <img src={previewImageUrl} alt={title}/>
               </div>
             </LazyLoad>
             <p className="photo-title">{title}</p>

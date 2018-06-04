@@ -19,8 +19,8 @@ export default class extends React.Component {
         <div onClick={this.onClick} className="video-container">
           <LazyLoad once>
             <div className="video-preview-image">
-              <img className="play-icon" src="/images/play.svg"/>
-              <img className="preview-img" src={previewImageUrl}/>
+              <img className="play-icon" src="/images/play.svg" alt="play icon"/>
+              <img className="preview-img" src={previewImageUrl} alt={title}/>
             </div>
           </LazyLoad>
           <p className="video-title">{title}</p>

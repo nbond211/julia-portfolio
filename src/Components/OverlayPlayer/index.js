@@ -165,7 +165,7 @@ export default class extends React.Component {
                   </svg>
                 }
                 <div className="player-photo-container">
-                  <img className="player-photo" src={images[currentImage].photo.url}/>
+                  <img className="player-photo" src={images[currentImage].photo.url} alt={title[0].text}/>
                   {
                     !singleImage &&
                     <p className="player-photo-number">{currentImage + 1} of {numImages}</p>
